@@ -1,0 +1,24 @@
+# Which note types exist and which link properties count as graph edges.
+# A property not listed here is ignored by the graph (it still works in Obsidian).
+
+note_types:
+  paper:   { folder: Papers,   color: "#d9d8d4" }
+  concept: { folder: Concepts, color: "#bcd6ec" }
+  theory:  { folder: Theories, color: "#d8c5e7" }
+  method:  { folder: Methods,  color: "#c3e0ca" }
+
+# from: note types allowed to use the property; to: note types it may point at
+relations:
+  grounded_in:        { from: [paper],                   to: [theory],                  label: "grounded in" }
+  uses_method:        { from: [paper],                   to: [method],                  label: "uses" }
+  measures:           { from: [paper],                   to: [concept, theory],         label: "measures" }
+  proposes:           { from: [paper],                   to: [theory, concept],         label: "proposes" }
+  defines:            { from: [paper],                   to: [concept, theory],         label: "defines" }
+  extends:            { from: [paper, theory],           to: [theory],                  label: "extends" }
+  critiques:          { from: [paper, theory],           to: [theory, concept, method], label: "critiques" }
+  part_of:            { from: [concept],                 to: [theory, concept],         label: "part of" }
+  operationalized_by: { from: [concept],                 to: [method],                  label: "measured with" }
+  related_to:         { from: [concept, theory, method], to: [concept, theory, method], label: "related to" }
+
+# These note types should have at least one bullet under "## Definitions"
+require_definition: [concept, theory]

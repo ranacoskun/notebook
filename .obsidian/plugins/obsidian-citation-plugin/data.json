@@ -1,0 +1,9 @@
+{
+  "citationExportFormat": "csl-json",
+  "literatureNoteTitleTemplate": "@{{citekey}}",
+  "literatureNoteFolder": "Papers",
+  "literatureNoteContentTemplate": "---\ntype: paper\npaper_kind:\ncitekey: {{citekey}}\ntitle: \"{{title}}\"\nauthors: \"{{authorString}}\"\nyear: {{year}}\nvenue: \"{{containerTitle}}\"\ndoi: {{DOI}}\nzotero: {{zoteroSelectURI}}\ngrounded_in: []\nuses_method: []\nmeasures: []\nproposes: []\ndefines: []\ncontext:\nsample:\ndesign:\nstatus: to-read\n---\n[Open in Zotero]({{zoteroSelectURI}})\n\n## Abstract\n{{abstract}}\n\n## Research questions / Core argument\n\n## Theoretical framing\n\n## Constructs / Operationalization\n\n## Method\n\n## Findings\n\n## Limitations & critiques\n\n## Relevance to my work\n\n",
+  "markdownCitationTemplate": "[@{{citekey}}]",
+  "alternativeMarkdownCitationTemplate": "@{{citekey}}",
+  "citationExportPath": "_zotero/library.json"
+}

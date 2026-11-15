@@ -1,0 +1,51 @@
+{
+  "collapse-filter": false,
+  "search": "-path:Templates  ",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "path:Papers ",
+      "color": {
+        "a": 1,
+        "rgb": 14048348
+      }
+    },
+    {
+      "query": "path:Concepts",
+      "color": {
+        "a": 1,
+        "rgb": 7383024
+      }
+    },
+    {
+      "query": "path:Theories  ",
+      "color": {
+        "a": 1,
+        "rgb": 16511092
+      }
+    },
+    {
+      "query": "path:Methods",
+      "color": {
+        "a": 1,
+        "rgb": 8576642
+      }
+    }
+  ],
+  "collapse-display": true,
+  "showArrow": false,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 1,
+  "lineSizeMultiplier": 1,
+  "collapse-forces": true,
+  "centerStrength": 0.518713248970312,
+  "repelStrength": 10,
+  "linkStrength": 1,
+  "linkDistance": 250,
+  "scale": 1.8132427319357611,
+  "close": true
+}
